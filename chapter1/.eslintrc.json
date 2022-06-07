@@ -1,0 +1,29 @@
+{
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "root": true,
+  "extends": ["plugin:@typescript-eslint/recommended", "plugin:prettier/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "tsconfig.json",
+    "sourceType": "module"
+  },
+  "ignorePatterns": [".eslintrc.js"],
+  "plugins": ["@typescript-eslint/eslint-plugin"],
+  "rules": {
+    "import/no-unresolved": "off",
+    "import/prefer-default-export": "off",
+    "import/extensions": ["off"],
+    "import/no-extraneous-dependencies": "off",
+    "@typescript-eslint/no-unsafe-member-access": "off",
+    "@typescript-eslint/no-unsafe-call": "off",
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    "no-void": "off",
+    "@typescript-eslint/no-misused-promises": "off",
+    "no-underscore-dangle": "off",
+    "@typescript-eslint/unbound-method": "off",
+    "@typescript-eslint/no-unsafe-argument": "warn"
+  }
+}
